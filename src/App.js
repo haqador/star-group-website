@@ -24,14 +24,17 @@ function App() {
             </div>
           </div>
         </nav>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/automobiles" element={<StarAutomobiles />} />
-          <Route path="/ahamed" element={<AhamedEnterprise />} />
-          <Route path="/jj-industries" element={<JJIndustries />} />
-          <Route path="/engineering" element={<StarEngineering />} />
-          <Route path="/it-zone" element={<StarITZone />} />
-        </Routes>
+
+        <div className="p-6">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/automobiles" element={<StarAutomobiles />} />
+            <Route path="/ahamed" element={<AhamedEnterprise />} />
+            <Route path="/jj-industries" element={<JJIndustries />} />
+            <Route path="/engineering" element={<StarEngineering />} />
+            <Route path="/it-zone" element={<StarITZone />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );

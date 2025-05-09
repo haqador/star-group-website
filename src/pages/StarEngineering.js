@@ -1,19 +1,13 @@
 import React from "react";
 
-const StarEngineering = () => {
+function StarEngineering() {
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Star Engineering and IT Solutions</h1>
-      <p>
-        We offer:
-      </p>
-      <ul className="list-disc list-inside mt-2">
-        <li>Electrical and electronics engineering services</li>
-        <li>Installation and maintenance for industrial systems</li>
-        <li>Custom automation and power solutions</li>
-      </ul>
+    <div className="bg-gradient-to-r from-purple-100 via-violet-200 to-pink-200 min-h-screen p-10 text-center">
+      <h1 className="text-4xl font-bold text-purple-700 mb-4">Star Engineering</h1>
+      <img src="https://images.unsplash.com/photo-1581092919537-1a19f9e5fefb" alt="Engineering equipment" className="mx-auto mb-6 rounded shadow-lg w-full max-w-2xl" />
+      <p className="text-lg text-gray-800">Powering industries with expert electrical, solar, and mechanical engineering solutions.</p>
     </div>
   );
-};
+}
 
 export default StarEngineering;

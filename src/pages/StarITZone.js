@@ -1,14 +1,13 @@
 import React from "react";
 
-const StarITZone = () => {
+function StarITZone() {
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Star IT Zone</h1>
-      <p>
-        Star IT Zone provides tailored IT support, software development, and telecommunication services to businesses and institutions. Our team ensures efficient and secure digital transformation for your operations.
-      </p>
+    <div className="bg-gradient-to-r from-cyan-100 via-blue-200 to-blue-300 min-h-screen p-10 text-center">
+      <h1 className="text-4xl font-bold text-blue-700 mb-4">Star IT Zone</h1>
+      <img src="https://images.unsplash.com/photo-1581093458791-ec3a31e59c16" alt="IT Services" className="mx-auto mb-6 rounded shadow-lg w-full max-w-2xl" />
+      <p className="text-lg text-gray-800">Delivering cutting-edge IT, networking, and support services across Bangladesh.</p>
     </div>
   );
-};
+}
 
 export default StarITZone;

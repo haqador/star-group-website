@@ -10,9 +10,9 @@ import StarITZone from "./pages/StarITZone";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen font-sans bg-gray-50">
-        <nav className="bg-gradient-to-r from-indigo-600 to-pink-500 p-4 text-white shadow-xl">
-          <div className="container mx-auto flex justify-between items-center">
+      <div className="min-h-screen bg-gray-50 font-sans">
+        <nav className="bg-indigo-600 p-4 text-white shadow-md">
+          <div className="flex justify-between items-center container mx-auto">
             <h1 className="text-2xl font-bold">STAR GROUP</h1>
             <div className="space-x-4">
               <Link to="/" className="hover:text-yellow-300">Home</Link>
@@ -25,16 +25,14 @@ function App() {
           </div>
         </nav>
 
-        <div className="p-6">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/automobiles" element={<StarAutomobiles />} />
-            <Route path="/ahamed" element={<AhamedEnterprise />} />
-            <Route path="/jj-industries" element={<JJIndustries />} />
-            <Route path="/engineering" element={<StarEngineering />} />
-            <Route path="/it-zone" element={<StarITZone />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/automobiles" element={<StarAutomobiles />} />
+          <Route path="/ahamed" element={<AhamedEnterprise />} />
+          <Route path="/jj-industries" element={<JJIndustries />} />
+          <Route path="/engineering" element={<StarEngineering />} />
+          <Route path="/it-zone" element={<StarITZone />} />
+        </Routes>
       </div>
     </Router>
   );

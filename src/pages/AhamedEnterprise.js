@@ -1,14 +1,13 @@
 import React from "react";
 
-const AhamedEnterprise = () => {
+function AhamedEnterprise() {
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Ahamed Enterprise C&F Co. Ltd.</h1>
-      <p>
-        Ahamed Enterprise provides customs clearance and freight forwarding services, ensuring hassle-free import/export operations for clients. We handle documentation, port handling, and logistics with efficiency and reliability.
-      </p>
+    <div className="bg-gradient-to-r from-green-100 via-blue-100 to-teal-100 min-h-screen p-10 text-center">
+      <h1 className="text-4xl font-bold text-green-700 mb-4">Ahamed Enterprise</h1>
+      <img src="https://images.unsplash.com/photo-1559027615-47ef1b2e526b" alt="Logistics" className="mx-auto mb-6 rounded shadow-lg w-full max-w-2xl" />
+      <p className="text-lg text-gray-800">Your reliable partner in customs clearance and freight forwarding solutions.</p>
     </div>
   );
-};
+}
 
 export default AhamedEnterprise;
